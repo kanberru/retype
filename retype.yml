@@ -1,5 +1,3 @@
-input: .
-output: .retype
 url: docs.kanber.ru # Add your website here
 branding:
   title: kanber.ru
@@ -7,5 +5,3 @@ branding:
 links:
   - text: Личный кабинет
     link: https://lk.kanber.ru
-footer:
-  copyright: "&copy; kanber.ru 2024. All rights reserved."
