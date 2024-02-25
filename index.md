@@ -8,7 +8,8 @@
 
 ![alt text](image.png)
 
-Еще нужно установить Callback URL - https://api.kanber.ru/api/v1/payments/yandex-pay
+> [!TIP]
+> Еще нужно установить Callback URL - https://api.kanber.ru/api/v1/payments/yandex-pay
 
 ![alt text](image-1.png)
 
