@@ -44,7 +44,7 @@ API URL | https://api.kanber.ru/api/v1/tilda/v1/checkout |
 Язык	 | lang | Верхний регистр 
 Страна	 | country | Верхний регистр 
 URL для уведомлений | notifyUrl |  
-Номер заказа | orderld | <ID проекта>.<ID заказа> 
+Номер заказа | orderId | <ID проекта>.<ID заказа> 
 Описание заказа | orderDescription |  
 Сумма заказа	 | total | В рублях/долларах/… 
 Email покупателя | customerEmail |  
