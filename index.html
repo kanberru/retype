@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.768320730485">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.770295516061">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -32,11 +32,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="resources/css/retype.css?v=3.5.0.768320730485" rel="stylesheet">
+    <link href="resources/css/retype.css?v=3.5.0.770295516061" rel="stylesheet">
 
-    <script data-cfasync="false" src="resources/js/config.js?v=3.5.0.768320730485" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="resources/js/config.js?v=3.5.0.770295516061" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=3.5.0.768320730485" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="resources/js/lunr.js?v=3.5.0.770295516061" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -213,287 +213,18 @@
         <span>2. Настройка Tilda <span class="docs-emoji">&#x26A1;</span></span>
     </h1>
 </doc-anchor-target>
+<p>Заходим в <a href="https://tilda.ru/identity/">Профиль</a>, включаем галочку &quot;Участвовать в тестировании новых функций&quot; и нажимаем &quot;Сохранить&quot;.</p>
 <p>Заходим в Настройки сайта -&gt; Платежные системы -&gt; Универсальная платежная система.</p>
-<p>Выбираем &quot;Новая платежная система (для разработчиков)&quot;</p>
+<p>Выбираем шаблон &quot;Kanber&quot;</p>
+<p><figure class="content-center">
+    <img src="kanbertilda.jpg" alt="Шаблон Kanber">
+    <figcaption class="caption">Шаблон Kanber</figcaption>
+</figure>
+</p>
 <p>В поле Логин прописываем <strong><code v-pre>Логин платежной системы</code> из ЛК Kanber</strong></p>
 <p>В поле секретный ключ прописываем <strong><code v-pre>Секрет для подписи заказа</code></strong> из ЛК Kanber</p>
-<p>Поле “URL ДЛЯ УВЕДОМЛЕНИЙ” пока оставить пустым</p>
+<p>Поле “URL ДЛЯ УВЕДОМЛЕНИЙ” можете оставить пустым</p>
 <p>Заполняем валюту (пока поддерживается только RUB), налоги, ФФД на своё усмотрение</p>
-<p>Раскрываем меню <strong>&quot;РАСШИРЕННЫЕ НАСТРОЙКИ&quot;</strong></p>
-<p>В &quot;API URL&quot; пишем <a href="https://api.kanber.ru/api/v1/tilda/v1/checkout">https://api.kanber.ru/api/v1/tilda/v1/checkout</a></p>
-<doc-anchor-target id="начинаем-заполнять-поля-в-расширенных-настройках">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#начинаем-заполнять-поля-в-расширенных-настройках">#</doc-anchor-trigger>
-        <span>Начинаем заполнять поля в расширенных настройках</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Название поля</th>
-<th>Значение</th>
-<th>Доп. информация</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>API URL</td>
-<td><a href="https://api.kanber.ru/api/v1/tilda/v1/checkout">https://api.kanber.ru/api/v1/tilda/v1/checkout</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Тестовый API URL</td>
-<td><a href="https://api.kanber.ru/api/v1/tilda/v1/checkout">https://api.kanber.ru/api/v1/tilda/v1/checkout</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Логин</td>
-<td>login</td>
-<td></td>
-</tr>
-<tr>
-<td>Валюта</td>
-<td>currency</td>
-<td>RUB/USD/…</td>
-</tr>
-<tr>
-<td>Язык</td>
-<td>lang</td>
-<td>Верхний регистр</td>
-</tr>
-<tr>
-<td>Страна</td>
-<td>country</td>
-<td>Верхний регистр</td>
-</tr>
-<tr>
-<td>URL для уведомлений</td>
-<td>notifyUrl</td>
-<td></td>
-</tr>
-<tr>
-<td>Номер заказа</td>
-<td>orderId</td>
-<td>&lt;ID проекта&gt;.&lt;ID заказа&gt;</td>
-</tr>
-<tr>
-<td>Описание заказа</td>
-<td>orderDescription</td>
-<td></td>
-</tr>
-<tr>
-<td>Сумма заказа</td>
-<td>total</td>
-<td>В рублях/долларах/…</td>
-</tr>
-<tr>
-<td>Email покупателя</td>
-<td>customerEmail</td>
-<td></td>
-</tr>
-<tr>
-<td>Телефон покупателя</td>
-<td>customerPhone</td>
-<td>Без изменений</td>
-</tr>
-<tr>
-<td>Имя покупателя</td>
-<td>customerName</td>
-<td>Имя (или ФИО, если пусто)</td>
-</tr>
-<tr>
-<td>Подпись</td>
-<td>signature</td>
-<td></td>
-</tr>
-<tr>
-<td>Товары</td>
-<td>items</td>
-<td>Массив JSON</td>
-</tr>
-<tr>
-<td>Порядковый номер</td>
-<td>num</td>
-<td>С единицы</td>
-</tr>
-<tr>
-<td>Название</td>
-<td>name</td>
-<td></td>
-</tr>
-<tr>
-<td>Количество</td>
-<td>quantity</td>
-<td></td>
-</tr>
-<tr>
-<td>Цена</td>
-<td>price</td>
-<td>В рублях/долларах/…</td>
-</tr>
-<tr>
-<td>Полная стоимость</td>
-<td>total</td>
-<td>В рублях/долларах/…</td>
-</tr>
-<tr>
-<td>Фото</td>
-<td>photo</td>
-<td></td>
-</tr>
-<tr>
-<td>Добавлять доставку в список товаров</td>
-<td>Да</td>
-<td></td>
-</tr>
-<tr>
-<td>Использовать цену со скидкой для товаров</td>
-<td>Да</td>
-<td></td>
-</tr>
-<tr>
-<td>ФФД 1.05</td>
-<td>receipt</td>
-<td>Массив в JSON</td>
-</tr>
-<tr>
-<td>Использовать цену со скидкой в массиве ФФД</td>
-<td>Да</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="подпись-заказа">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#подпись-заказа">#</doc-anchor-trigger>
-        <span>Подпись заказа</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th style="text-align: left;">Правила подписи</th>
-<th style="text-align: right;">Особые правила</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Особые правила подписи</td>
-<td style="text-align: right;">{{login}}{{total}}{{orderId}}{{notifyUrl}}{{items}}{{receipt}}{{secret}}</td>
-</tr>
-<tr>
-<td style="text-align: left;">Алгоритм шифрования</td>
-<td style="text-align: right;">SHA-256</td>
-</tr>
-<tr>
-<td style="text-align: left;">Использовать секрет в качестве ключа алгоритма (HMAC)</td>
-<td style="text-align: right;">Нет</td>
-</tr>
-<tr>
-<td style="text-align: left;">Преобразовать к верхнему регистру</td>
-<td style="text-align: right;">Нет</td>
-</tr>
-<tr>
-<td style="text-align: left;">Преобразовать итоговую подпись в base64</td>
-<td style="text-align: right;">Нет</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="подпись-уведомления">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#подпись-уведомления">#</doc-anchor-trigger>
-        <span>Подпись уведомления</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th style="text-align: left;">Правила подписи</th>
-<th style="text-align: right;">Особые правила</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">Использовать аналогичные правила для подписи уведомления</td>
-<td style="text-align: right;">Нет</td>
-</tr>
-<tr>
-<td style="text-align: left;">ПРАВИЛА ПОДПИСИ</td>
-<td style="text-align: right;">Особые правила</td>
-</tr>
-<tr>
-<td style="text-align: left;">ОСОБЫЕ ПРАВИЛА ПОДПИСИ</td>
-<td style="text-align: right;">{{orderId}}{{status}}{{secret}}</td>
-</tr>
-<tr>
-<td style="text-align: left;">Алгоритм шифрования</td>
-<td style="text-align: right;">SHA-256</td>
-</tr>
-<tr>
-<td style="text-align: left;">Использовать секрет в качестве ключа алгоритма (HMAC)</td>
-<td style="text-align: right;">Нет</td>
-</tr>
-<tr>
-<td style="text-align: left;">Преобразовать к верхнему регистру</td>
-<td style="text-align: right;">Нет</td>
-</tr>
-<tr>
-<td style="text-align: left;">Преобразовать итоговую подпись в base64</td>
-<td style="text-align: right;">Нет</td>
-</tr>
-</tbody>
-</table>
-</div>
-<doc-anchor-target id="уведомление">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#уведомление">#</doc-anchor-trigger>
-        <span>Уведомление</span>
-    </h2>
-</doc-anchor-target>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Название поля</th>
-<th>Значение</th>
-<th>Доп. информация</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ПРИЗНАК УСПЕШНОГО ПЛАТЕЖА</td>
-<td>status</td>
-<td>SUCCESS</td>
-</tr>
-<tr>
-<td>ИДЕНТИФИКАТОР ТРАНЗАКЦИИ</td>
-<td>operationId</td>
-<td>UUID</td>
-</tr>
-<tr>
-<td>ОТВЕТ ОБ УСПЕХЕ УВЕДОМЛЕНИЯ</td>
-<td>OK</td>
-<td></td>
-</tr>
-<tr>
-<td>ОТВЕТ ОБ ОШИБКЕ УВЕДОМЛЕНИЯ</td>
-<td>ERROR</td>
-<td></td>
-</tr>
-<tr>
-<td>Ответы на уведомление в формате json</td>
-<td>Нет</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Раздел “ПОДДЕРЖКА”, требуется только для подачи шаблона в общий доступ тильды, заполнять не нужно</p>
 <p>Пролистываем в самый низ, заполняем Заголовок и сохраняем.</p>
 <p>Снова открываем страницу этой платежной системы, вверху страницы ищем поле “URL ДЛЯ УВЕДОМЛЕНИЙ”, там должна была появится ссылка, копируем её и вставляем в поле <code v-pre>URL для уведомлений</code> в ЛК Kanber.</p>
 
