@@ -1,34 +1,34 @@
-# Настройка для Tilda ⚡
+# Setting up for Tilda ⚡
 
-Приветствуем и благодарим тебя за пользование нашим сервисом **kanber.ru**
+Welcome and thank you for using our service **kanber.ru**
 
-# 1. Получение ключей YandexPay ⚡
+# 1. Getting YandexPay keys ⚡
 
-Для начала работы с сервисом нужно получить несколько ключей [здесь](https://console.pay.yandex.ru/web/account/settings/online)
+To start working with the service, you need to get several keys [here](https://console.pay.yandex.ru/web/account/settings/online)
 
-![Получение Merchant ID](image.png)
+![Getting Merchant ID](image.png)
 
 > [!TIP]
-> Еще нужно установить Callback URL - https://api.kanber.ru/api/v1/payments/yandex-pay
+> You also need to set the Callback URL - https://api.kanber.ru/api/v1/payments/yandex-pay
 
-![Устанавливаем Callback URL](image-1.png)
+![Setting the Callback URL](image-1.png)
 
-И еще, нужно выпустить ключ, это чуть ниже, скопируйте ключ сохраните его, ID ключа не нужен
+And also, you need to issue a key, it's just below, copy the key and save it, the key ID is not needed
 
-# 2. Настройка Tilda ⚡
+# 2. Setting up Tilda ⚡
 
-Заходим в [Профиль](https://tilda.ru/identity/), включаем галочку "Участвовать в тестировании новых функций" и нажимаем "Сохранить".
+Go to [Profile](https://tilda.ru/identity/), check the box "Participate in testing new functions" and click "Save".
 
-Заходим в Настройки сайта -> Платежные системы -> Универсальная платежная система.
+Go to Site Settings -> Payment systems -> Universal payment system.
 
-Выбираем шаблон "Kanber"
+Select the "Kanber" template
 
-![Шаблон Kanber](kanberTilda.jpg)
+![Kanber template](kanberTilda.jpg)
 
-В поле Логин прописываем **`Логин платежной системы` из ЛК Kanber**
+In the Login field, enter **`Payment system login` from the Kanber personal account**
 
-В поле секретный ключ прописываем **`Секрет для подписи заказа`** из ЛК Kanber
+In the secret key field, enter **`Secret for signing an order`** from the Kanber personal account
 
-Поле “URL ДЛЯ УВЕДОМЛЕНИЙ” можете оставить пустым
+You can leave the “URL FOR NOTIFICATIONS” field empty
 
-Заполняем валюту (пока поддерживается только RUB), налоги, ФФД на своё усмотрение
+Fill in the currency (only RUB is supported for now), taxes, FFD at your discretion
