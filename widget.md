@@ -30,7 +30,9 @@
 
     // Данные платежа
     const paymentData = {
-      env: YaPay.PaymentEnv.Sandbox,
+      // Для отладки нужно явно указать `SANDBOX` окружение,
+      // для продакшена параметр можно убрать или указать `PRODUCTION`
+      // env: YaPay.PaymentEnv.Sandbox,
       version: 4,
       currencyCode: YaPay.CurrencyCode.Rub,
       merchantId: MERCHANT_ID,
